@@ -4,12 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.34031.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task0", "Task0", "{A07F9985-E4CF-402E-8048-79DBBF5F1874}"
+	ProjectSection(SolutionItems) = preProject
+		DLL\tyuiu.cources.programming.interfaces.dll = DLL\tyuiu.cources.programming.interfaces.dll
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.GoginMA.Sprint1.Task0.V9", "Tyuiu.GoginMA.Sprint1.Task0.V9\Tyuiu.GoginMA.Sprint1.Task0.V9.csproj", "{F852BB2D-B89F-42B4-8164-DEB5D95F5569}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.GoginMA.Sprint1.Task0.V9.Lib", "Tyuiu.GoginMA.Sprint1.Task0.V9.Lib\Tyuiu.GoginMA.Sprint1.Task0.V9.Lib.csproj", "{F8D60246-C5DC-4920-A45A-02F72E69CEC0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.GoginMA.Sprint1.Task0.V9.Test", "Tyuiu.GoginMA.Sprint1.Task0.V9.Test\Tyuiu.GoginMA.Sprint1.Task0.V9.Test.csproj", "{5E7A4D0C-39FD-43A8-B951-4F696ED6E8C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95E677AF-EB86-499B-8C46-4059CF259C79}"
+	ProjectSection(SolutionItems) = preProject
+		DLL\tyuiu.cources.programming.interfaces.dll = DLL\tyuiu.cources.programming.interfaces.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
