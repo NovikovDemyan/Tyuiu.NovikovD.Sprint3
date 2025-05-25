@@ -1,24 +1,20 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-using Tyuiu.GoginMA.Sprint1.Task5.V1.Lib;
+using Tyuiu.NovikovD.Sprint1.Task5.V4.Lib;
 
-namespace Tyuiu.GoginMA.Sprint1.Task5.V1.Test
+namespace Tyuiu.NovikovD.Sprint1.Task5.V4.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidCalculateHours()
         {
-            double x1 = 3;
-            double y1 = 1;
-            double x2 = 1;
-            double y2 = 3;
             DataService ds = new DataService();
-            double res = ds.DistanceBetweenDots(x1, y1, x2, y2);
-            int result = Convert.ToInt32(res);
-            int wait = 3;
+            int seconds = 13257;
+            int result = ds.CalculateHours(seconds);
+            int wait = 3; // 13257 / 3600 = 3.6825  3 часа
             Assert.AreEqual(wait, result);
         }
     }

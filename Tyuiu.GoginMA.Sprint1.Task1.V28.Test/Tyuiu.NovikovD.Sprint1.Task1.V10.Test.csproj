@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E7A4D0C-39FD-43A8-B951-4F696ED6E8C0}</ProjectGuid>
+    <ProjectGuid>{EA71A950-EADE-4488-BD7D-2371837061DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.GoginMA.Sprint1.Task0.V9.Test</RootNamespace>
-    <AssemblyName>Tyuiu.GoginMA.Sprint1.Task0.V9.Test</AssemblyName>
+    <RootNamespace>Tyuiu.GoginMA.Sprint1.Task1.V28.Test</RootNamespace>
+    <AssemblyName>Tyuiu.GoginMA.Sprint1.Task1.V28.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.GoginMA.Sprint1.Task0.V9.Lib\Tyuiu.GoginMA.Sprint1.Task0.V9.Lib.csproj">
-      <Project>{f8d60246-c5dc-4920-a45a-02f72e69cec0}</Project>
-      <Name>Tyuiu.GoginMA.Sprint1.Task0.V9.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.GoginMA.Sprint1.Task1.V28.Lib\Tyuiu.NovikovD.Sprint1.Task1.V10.Lib.csproj">
+      <Project>{b19325b5-553f-4801-a577-a27954697446}</Project>
+      <Name>Tyuiu.NovikovD.Sprint1.Task1.V10.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

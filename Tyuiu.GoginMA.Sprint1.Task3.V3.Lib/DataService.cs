@@ -4,16 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.GoginMA.Sprint1.Task3.V3.Lib;
+using Tyuiu.NovikovD.Sprint1.Task3.V7.Lib;
 using tyuiu.cources.programming.interfaces.Sprint1;
 
-namespace Tyuiu.GoginMA.Sprint1.Task3.V3.Lib
+namespace Tyuiu.NovikovD.Sprint1.Task3.V7.Lib
 {
-    public class DataService : ISprint1Task3V3
+    public class DataService : ISprint1Task3V7
     {
-        public double ParallelepipedVolume(double length, double width, double height)
+        public double VerstsToKilometers(double verst)
         {
-            return length * width * height;
+            const double VERST_TO_METERS = 1066.8;
+            const double METERS_TO_KILOMETERS = 0.001;
+            double result = verst * VERST_TO_METERS * METERS_TO_KILOMETERS;
+            return Math.Round(result, 3);
         }
     }
 }

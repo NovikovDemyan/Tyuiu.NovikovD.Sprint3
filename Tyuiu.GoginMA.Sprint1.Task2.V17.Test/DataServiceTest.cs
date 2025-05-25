@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-using Tyuiu.GoginMA.Sprint1.Task2.V17.Lib;
+using Tyuiu.NovikovD.Sprint1.Task2.V3.Lib;
 
-namespace Tyuiu.GoginMA.Sprint1.Task2.V17.Test
+namespace Tyuiu.NovikovD.Sprint1.Task2.V3.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -12,9 +12,9 @@ namespace Tyuiu.GoginMA.Sprint1.Task2.V17.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            int x = 60;
-            var res = ds.ConvertMinutesToHours(x);
-            Assert.AreEqual(1, res);
+            int x = 3;
+            var res = ds.ConvertHourToMin(x);
+            Assert.AreEqual(180, res);
         }
     }
 }

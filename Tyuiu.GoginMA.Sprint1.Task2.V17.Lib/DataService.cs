@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 using tyuiu.cources.programming.interfaces.Sprint1;
 
-namespace Tyuiu.GoginMA.Sprint1.Task2.V17.Lib
+namespace Tyuiu.NovikovD.Sprint1.Task2.V3.Lib
 {
-    public class DataService : ISprint1Task2V17
+    public class DataService : ISprint1Task2V3
     {
-        public int ConvertMinutesToHours(int x)
+        public int ConvertHourToMin(int x)
         {
-            return x / 60;
+            return x * 60;
         }
     }
 }

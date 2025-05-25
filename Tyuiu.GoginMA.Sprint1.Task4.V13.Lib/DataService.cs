@@ -5,14 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 using tyuiu.cources.programming.interfaces.Sprint1;
-namespace Tyuiu.GoginMA.Sprint1.Task4.V13.Lib
+namespace Tyuiu.NovikovD.Sprint1.Task4.V24.Lib
 {
-    public class DataService : ISprint1Task4V13
+    public class DataService : ISprint1Task4V24
     {
         public double Calculate(double x, double y)
         {
-            var res = ((Math.Cos((Math.PI / x))) / (3 * Math.Pow(Math.E, (x + y))));
-            return Math.Round(res, 3);
+            double numerator = Math.Log(x * y);
+            double denominator = x + Math.Sqrt(2 * Math.Pow(y, 2));
+            double result = numerator / denominator;
+            return Math.Round(result, 3);
         }
     }
 }

@@ -4,40 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.GoginMA.Sprint1.Task3.V3.Lib;
+using Tyuiu.NovikovD.Sprint1.Task3.V7.Lib;
 
-namespace Tyuiu.GoginMA.Sprint1.Task3.V3
+namespace Tyuiu.NovikovD.Sprint1.Task3.V7
 {
     class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            Console.Title = "Спринт #1 | Выполнил: Гогин М. А. | АСОиУБ-23-1";
-            Console.WriteLine("**************************************************************************");
-            Console.WriteLine("* Спринт #1                                                              *");
-            Console.WriteLine("* Тема: Операторы составного присваивания                                *");
-            Console.WriteLine("* Задание #3                                                             *");
-            Console.WriteLine("* Вариант #3                                                             *");
-            Console.WriteLine("* Выполнил: Гогин Михаил Александрович | АСОиУБ-23-1                     *");
-            Console.WriteLine("**************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                               *");
-            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные,*");
-            Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.            *");
-            Console.WriteLine("*                                                                        *");
-            Console.WriteLine("**************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                       *");
-            Console.WriteLine("**************************************************************************");
-            double length = 9;
-            double width = 7.5;
-            double height = 5;
-            Console.WriteLine("Сторона A параллелепипеда равна " + length + " см");
-            Console.WriteLine("Сторона B параллелепипеда равна " + width + " см");
-            Console.WriteLine("Сторона C параллелепипеда равна " + height + " см");
-            Console.WriteLine("**************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                             *");
-            Console.WriteLine("**************************************************************************");
-            Console.WriteLine("объем параллелепипеда равен " + ds.ParallelepipedVolume(length, width, height) + " см куб.");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #1                                                               *");
+            Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
+            Console.WriteLine("* Задание #3                                                               *");
+            Console.WriteLine("* Вариант #7                                                               *");
+            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Написать программу пересчета расстояния из верст в километры.           *");
+            Console.WriteLine("* 1 верста = 1066.8 м. Ответ округлить до 3 знаков после запятой.        *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
+
+            Console.Write("Введите расстояние в верстах: ");
+            double verst = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
+
+            double result = ds.VerstsToKilometers(verst);
+            Console.WriteLine($"{verst} верст = {result} км");
+            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }
