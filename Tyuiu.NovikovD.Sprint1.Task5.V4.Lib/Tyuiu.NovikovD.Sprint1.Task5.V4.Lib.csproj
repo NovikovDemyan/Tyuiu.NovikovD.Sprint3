@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E757BACB-BE51-4C06-9478-513C073E575E}</ProjectGuid>
+    <ProjectGuid>{3B942C3F-9711-4A7F-8235-1881D672C9BA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib</AssemblyName>
+    <RootNamespace>Tyuiu.NovikovD.Sprint1.Task5.V4.Lib</RootNamespace>
+    <AssemblyName>Tyuiu.NovikovD.Sprint1.Task5.V4.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные со сборкой.
-[assembly: AssemblyTitle("Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib")]
+[assembly: AssemblyTitle("Tyuiu.NovikovD.Sprint1.Task7.V29.Lib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib")]
+[assembly: AssemblyProduct("Tyuiu.NovikovD.Sprint1.Task7.V29.Lib")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("e757bacb-be51-4c06-9478-513c073e575e")]
+[assembly: Guid("07b1c22e-cd51-4f78-a44e-90e137c7f78f")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
