@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tyuiu.NovikovD.Sprint2.Task5.V5.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task5.V4.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task5.V4
+namespace Tyuiu.NovikovD.Sprint2.Task5.V5
 {
     class Program
     {
@@ -14,30 +9,27 @@ namespace Tyuiu.NovikovD.Sprint1.Task5.V4
         {
             DataService ds = new DataService();
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #4                                                              *");
-            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая определяет количество полных часов,         *");
-            Console.WriteLine("* прошедших с начала суток до k-й секунды.                                *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* Спринт #2                                                 *");
+            Console.WriteLine("* Тема: Оператор switch                                     *");
+            Console.WriteLine("* Задание #5                                               *");
+            Console.WriteLine("* Вариант #5                                               *");
+            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-2                       *");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                  *");
+            Console.WriteLine("* По заданному номеру карты (6 <= k <= 14) определить её   *");
+            Console.WriteLine("* достоинство.                                             *");
+            Console.WriteLine("************************************************************");
 
-            Console.Write("Введите количество секунд: ");
-            int totalSeconds = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите номер карты (от 6 до 14): ");
+            int k = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
+            string result = ds.FindCardValue(k);
 
-            int hours = ds.CalculateHours(totalSeconds);
-            Console.WriteLine($"Прошло полных часов: {hours}");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine($"Достоинство карты: {result}");
+            Console.WriteLine("************************************************************");
+
             Console.ReadKey();
         }
     }

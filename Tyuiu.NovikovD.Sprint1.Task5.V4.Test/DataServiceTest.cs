@@ -1,21 +1,33 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Tyuiu.NovikovD.Sprint2.Task5.V5.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task5.V4.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task5.V4.Test
+namespace Tyuiu.NovikovD.Sprint2.Task5.V5.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculateHours()
+        public void TestCardNameKing()
         {
             DataService ds = new DataService();
-            int seconds = 13257;
-            int result = ds.CalculateHours(seconds);
-            int wait = 3; // 13257 / 3600 = 3.6825  3 часа
-            Assert.AreEqual(wait, result);
+            string result = ds.FindCardValue(13);
+            Assert.AreEqual("Король", result);
+        }
+
+        [TestMethod]
+        public void TestCardNameSix()
+        {
+            DataService ds = new DataService();
+            string result = ds.FindCardValue(6);
+            Assert.AreEqual("Шестерка", result);
+        }
+
+        [TestMethod]
+        public void TestInvalidCard()
+        {
+            DataService ds = new DataService();
+            string result = ds.FindCardValue(15);
+            Assert.AreEqual("Некорректный номер карты", result);
         }
     }
 }

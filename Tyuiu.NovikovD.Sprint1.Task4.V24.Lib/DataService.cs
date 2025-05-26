@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using tyuiu.cources.programming.interfaces.Sprint2;
 
-using tyuiu.cources.programming.interfaces.Sprint1;
-namespace Tyuiu.NovikovD.Sprint1.Task4.V24.Lib
+namespace Tyuiu.NovikovD.Sprint2.Task4.V14.Lib
 {
-    public class DataService : ISprint1Task4V24
+    public class DataService : ISprint2Task4V14
     {
         public double Calculate(double x, double y)
         {
-            double numerator = Math.Log(x * y);
-            double denominator = x + Math.Sqrt(2 * Math.Pow(y, 2));
-            double result = numerator / denominator;
-            return Math.Round(result, 3);
+            double z = (x * 3 < 20 * Math.Sqrt(y))
+                ? (2 + (1 / x)) * y
+                : (Math.Pow(y, 2) - Math.Cos(Math.Pow(x, 2)) + 10) / (Math.Pow(x, 2) - Math.Sin(Math.Pow(y, 2)) + 12);
+
+            return Math.Round(z, 3);
         }
     }
 }
+

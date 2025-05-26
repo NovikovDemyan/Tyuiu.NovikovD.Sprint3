@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using tyuiu.cources.programming.interfaces.Sprint2;
 
-using tyuiu.cources.programming.interfaces.Sprint1;
-
-namespace Tyuiu.NovikovD.Sprint1.Task6.V9.Lib
+namespace Tyuiu.NovikovD.Sprint2.Task6.V3.Lib
 {
-    public class DataService : ISprint1Task6V9
+    public class DataService : ISprint2Task6V3
     {
-        public string MoveLetterToStart(string text)
+        public string FindDayName(int dayNumber)
         {
-            if (string.IsNullOrWhiteSpace(text))
-                return text;
-
-            return string.Join(" ", text.Split(' ')
-                .Select(word => word.Length > 0
-                    ? word[word.Length - 1] + word.Substring(0, word.Length - 1)
-                    : word));
+            if (dayNumber == 1) return "Понедельник";
+            else if (dayNumber == 2) return "Вторник";
+            else if (dayNumber == 3) return "Среда";
+            else if (dayNumber == 4) return "Четверг";
+            else if (dayNumber == 5) return "Пятница";
+            else if (dayNumber == 6) return "Суббота";
+            else if (dayNumber == 7) return "Воскресенье";
+            else return "Ошибка: некорректный номер дня";
         }
     }
 }

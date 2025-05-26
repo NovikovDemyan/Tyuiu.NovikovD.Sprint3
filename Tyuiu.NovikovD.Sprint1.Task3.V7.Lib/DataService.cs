@@ -1,22 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using tyuiu.cources.programming.interfaces.Sprint2;
 
-using Tyuiu.NovikovD.Sprint1.Task3.V7.Lib;
-using tyuiu.cources.programming.interfaces.Sprint1;
-
-namespace Tyuiu.NovikovD.Sprint1.Task3.V7.Lib
+namespace Tyuiu.NovikovD.Sprint2.Task3.V11.Lib
 {
-    public class DataService : ISprint1Task3V7
+    public class DataService : ISprint2Task3V11
     {
-        public double VerstsToKilometers(double verst)
+        public double Calculate(double x)
         {
-            const double VERST_TO_METERS = 1066.8;
-            const double METERS_TO_KILOMETERS = 0.001;
-            double result = verst * VERST_TO_METERS * METERS_TO_KILOMETERS;
-            return Math.Round(result, 3);
+            double y;
+
+            if (x > 0)
+            {
+                y = (x + (x - 15)) / (x - 19);
+                y = Math.Pow(y, x);
+            }
+            else if (x == 0)
+            {
+                y = Math.Pow(x, 2) - Math.Cos(Math.Pow(x, 2)) + 10;
+            }
+            else if (x > -15 && x < 0)
+            {
+                y = Math.Pow(x, 2) - Math.Sin(Math.Pow(x, 2)) + 12;
+            }
+            else if (x > -20 && x <= -15)
+            {
+                y = Math.Pow(1 + 1 / Math.Pow(x, 2), 1.0 / x);
+            }
+            else // x <= -20
+            {
+                y = x + 10 * (1.0 / x);
+            }
+
+            return Math.Round(y, 3);
         }
     }
 }

@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E897747-DD0A-4B2B-8075-79F280F919F0}</ProjectGuid>
+    <ProjectGuid>{C5B04970-38D6-4F57-B53C-F57E276395EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.NovikovD.Sprint1.Task3.V7.Test</RootNamespace>
-    <AssemblyName>Tyuiu.NovikovD.Sprint1.Task3.V7.Test</AssemblyName>
+    <RootNamespace>Tyuiu.NovikovD.Sprint1.Task1.V10.Test</RootNamespace>
+    <AssemblyName>Tyuiu.NovikovD.Sprint1.Task1.V10.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.NovikovD.Sprint1.Task3.V7.Lib\Tyuiu.NovikovD.Sprint1.Task3.V7.Lib.csproj">
-      <Project>{a85652c3-2850-422a-902c-807e8f2301be}</Project>
-      <Name>Tyuiu.NovikovD.Sprint1.Task3.V7.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.NovikovD.Sprint1.Task1.V10.Lib\Tyuiu.NovikovD.Sprint2.Task0.V11.Lib.csproj">
+      <Project>{74781911-abbb-4615-8756-6608450bbdbe}</Project>
+      <Name>Tyuiu.NovikovD.Sprint2.Task0.V11.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

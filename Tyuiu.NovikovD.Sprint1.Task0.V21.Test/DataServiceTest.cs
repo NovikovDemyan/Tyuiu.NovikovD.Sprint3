@@ -1,19 +1,21 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Tyuiu.NovikovD.Sprint2.Task0.V11.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task0.V21.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task0.V21.Test
+namespace Tyuiu.NovikovD.Sprint2.Task0.V11.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidGetCompareOperations()
         {
             DataService ds = new DataService();
-            var res = ds.Calculate();
-            Assert.AreEqual(17, res);
+            int x = 8105;
+            int y = 275;
+            bool[] res = ds.GetCompareOperations(x, y);
+            bool[] wait = { true, false, true, false, true, false };
+
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }

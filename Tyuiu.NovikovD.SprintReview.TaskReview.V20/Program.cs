@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib;
+using Tyuiu.NovikovD.Sprint2.SprintReview.V3.Lib;
 
-namespace Tyuiu.NovikovD.SprintReview.TaskReview.V20
+namespace Tyuiu.NovikovD.Sprint2.SprintReview.V3
 {
     class Program
     {
@@ -9,33 +9,32 @@ namespace Tyuiu.NovikovD.SprintReview.TaskReview.V20
         {
             DataService ds = new DataService();
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #Review                                                          *");
-            Console.WriteLine("* Тема: Итоговый обзор спринта                                            *");
-            Console.WriteLine("* Задание #Review                                                         *");
-            Console.WriteLine("* Вариант #0                                                              *");
-            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет сложное математическое выражение  *");
-            Console.WriteLine("* по формуле варианта 20 с округлением до 3 знаков после запятой.         *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* Спринт #2                                                 *");
+            Console.WriteLine("* Sprint Review                                             *");
+            Console.WriteLine("* Вариант #3                                                *");
+            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-1                        *");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                  *");
+            Console.WriteLine("* Определить, принадлежит ли точка (x, y) заштрихованной    *");
+            Console.WriteLine("* области, ограниченной дугой окружности и параболой.       *");
+            Console.WriteLine("************************************************************");
 
-            Console.Write("Введите X: ");
+            Console.Write("Введите значение X: ");
             double x = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введите Y: ");
+            Console.Write("Введите значение Y: ");
             double y = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
+            bool result = ds.IsPointInShadedArea(x, y);
 
-            double result = ds.CalculateReviewFormula(x, y);
-            Console.WriteLine($"Результат: {result}");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("************************************************************");
+            if (result)
+                Console.WriteLine("Точка принадлежит заштрихованной области.");
+            else
+                Console.WriteLine("Точка НЕ принадлежит заштрихованной области.");
+            Console.WriteLine("************************************************************");
+
             Console.ReadKey();
         }
     }

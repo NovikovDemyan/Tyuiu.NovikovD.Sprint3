@@ -1,18 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using tyuiu.cources.programming.interfaces.Sprint1;
+﻿using tyuiu.cources.programming.interfaces.Sprint2;
 
-namespace Tyuiu.NovikovD.Sprint1.Task5.V4.Lib
+namespace Tyuiu.NovikovD.Sprint2.Task5.V5.Lib
 {
-    public class DataService
+    public class DataService : ISprint2Task5V5
     {
-        public int CalculateHours(int totalSeconds)
+        public string FindCardValue(int k)
         {
-            const int SECONDS_PER_HOUR = 3600;
-            return totalSeconds / SECONDS_PER_HOUR;
+            switch (k)
+            {
+                case 6: return "Шестерка";
+                case 7: return "Семерка";
+                case 8: return "Восьмерка";
+                case 9: return "Девятка";
+                case 10: return "Десятка";
+                case 11: return "Валет";
+                case 12: return "Дама";
+                case 13: return "Король";
+                case 14: return "Туз";
+                default: return "Некорректный номер карты";
+            }
         }
     }
 }

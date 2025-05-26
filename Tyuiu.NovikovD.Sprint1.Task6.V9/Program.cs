@@ -1,43 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tyuiu.NovikovD.Sprint2.Task6.V3.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task6.V9.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task6.V9
+namespace Tyuiu.NovikovD.Sprint2.Task6.V3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DataService ds = new DataService();
+            var ds = new DataService();
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Работа со строками                                                *");
-            Console.WriteLine("* Задание #5                                                               *");
-            Console.WriteLine("* Вариант #9                                                               *");
-            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая переносит последнюю букву каждого слова     *");
-            Console.WriteLine("* в начало слова.                                                         *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("*************************************************************");
+            Console.WriteLine("* Спринт #2                                                 *");
+            Console.WriteLine("* Тема: Условные операторы if-else                          *");
+            Console.WriteLine("* Задание #6                                                *");
+            Console.WriteLine("* Вариант #3                                                *");
+            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-1                        *");
+            Console.WriteLine("*************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                  *");
+            Console.WriteLine("* По номеру дня недели (1-7) вывести название дня           *");
+            Console.WriteLine("*************************************************************");
 
-            Console.Write("Введите текст: ");
-            string input = Console.ReadLine();
+            Console.Write("Введите номер дня недели (1–7): ");
+            int dayNumber = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
+            string result = ds.FindDayName(dayNumber);
 
-            string result = ds.MoveLetterToStart(input);
-            Console.WriteLine($"Результат: {result}");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine($"Название дня недели: {result}");
+            Console.WriteLine("************************************************************");
+
             Console.ReadKey();
         }
     }

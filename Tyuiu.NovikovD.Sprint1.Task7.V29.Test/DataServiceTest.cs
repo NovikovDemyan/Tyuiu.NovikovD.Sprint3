@@ -1,30 +1,30 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Tyuiu.NovikovD.Sprint2.Task7.V8.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task7.V29.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task7.V29.Test
+namespace Tyuiu.NovikovD.Sprint2.Task7.V8.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculate()
+        public void TestPointInsideArea()
         {
-            DataService ds = new DataService();
-            double x = 1.0;
-            double y = 2.0;
-            double result = ds.Calculate(x, y);
-            double wait = 0.841; // Примерное значение для проверки
-            Assert.AreEqual(wait, result, 0.001);
+            var ds = new DataService();
+            Assert.IsTrue(ds.CheckDotInShadedArea(1, 2));
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void InvalidDenominatorTest()
+        public void TestPointOutsideArea()
         {
-            DataService ds = new DataService();
-            ds.Calculate(1.0, 3.0); // xy-3 = 0
+            var ds = new DataService();
+            Assert.IsFalse(ds.CheckDotInShadedArea(-1, 2));
+        }
+
+        [TestMethod]
+        public void TestPointOnBorder()
+        {
+            var ds = new DataService();
+            Assert.IsTrue(ds.CheckDotInShadedArea(2, 4)); // на границе
         }
     }
 }

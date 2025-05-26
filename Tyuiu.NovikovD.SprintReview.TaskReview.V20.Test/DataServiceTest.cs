@@ -1,20 +1,30 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib;
+using Tyuiu.NovikovD.Sprint2.SprintReview.V3.Lib;
 
-namespace Tyuiu.NovikovD.SprintReview.TaskReview.V20.Test
+namespace Tyuiu.NovikovD.Sprint2.SprintReview.V3.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculateReviewFormula()
+        public void TestPointInside()
         {
-            DataService ds = new DataService();
-            double x = 1.5;
-            double y = 2.5;
-            double result = ds.CalculateReviewFormula(x, y);
-            double wait = 4.768;
-            Assert.AreEqual(wait, result, 0.001);
+            var ds = new DataService();
+            Assert.IsTrue(ds.IsPointInShadedArea(0, 1));
+        }
+
+        [TestMethod]
+        public void TestPointOutsideCircle()
+        {
+            var ds = new DataService();
+            Assert.IsFalse(ds.IsPointInShadedArea(0, 3));
+        }
+
+        [TestMethod]
+        public void TestPointUnderParabola()
+        {
+            var ds = new DataService();
+            Assert.IsFalse(ds.IsPointInShadedArea(0.5, 0));
         }
     }
 }

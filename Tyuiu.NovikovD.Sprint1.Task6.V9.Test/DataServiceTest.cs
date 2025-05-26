@@ -1,21 +1,33 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Tyuiu.NovikovD.Sprint2.Task6.V3.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task6.V9.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task6.V9.Test
+namespace Tyuiu.NovikovD.Sprint2.Task6.V3.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidMoveLastLetter()
+        public void TestMonday()
         {
-            DataService ds = new DataService();
-            string input = "Hello World";
-            string result = ds.MoveLetterToStart(input);
-            string wait = "oHell dWorl";
-            Assert.AreEqual(wait, result);
+            var ds = new DataService();
+            string result = ds.FindDayName(1);
+            Assert.AreEqual("Понедельник", result);
+        }
+
+        [TestMethod]
+        public void TestInvalidDay()
+        {
+            var ds = new DataService();
+            string result = ds.FindDayName(8);
+            Assert.AreEqual("Ошибка: некорректный номер дня", result);
+        }
+
+        [TestMethod]
+        public void TestSunday()
+        {
+            var ds = new DataService();
+            string result = ds.FindDayName(7);
+            Assert.AreEqual("Воскресенье", result);
         }
     }
 }

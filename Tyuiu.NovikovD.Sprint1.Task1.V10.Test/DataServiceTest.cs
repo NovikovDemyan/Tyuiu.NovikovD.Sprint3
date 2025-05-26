@@ -1,22 +1,23 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Tyuiu.NovikovD.Sprint2.Task1.V5.Lib;
 
-using Tyuiu.NovikovD.Sprint1.Task1.V10.Lib;
-
-namespace Tyuiu.NovikovD.Sprint1.Task1.V10.Test
+namespace Tyuiu.NovikovD.Sprint2.Task1.V5.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidGetLogicOperations()
         {
             DataService ds = new DataService();
-            double x = 2;
-            double y = 4;
-            double res = ds.Calculate(x, y);
-            double wait = 2;  // (2+4)/(1+2) = 2
-            Assert.AreEqual(wait, res);
+            int a = 154;
+            int b = 163;
+            int c = 134;
+            int d = 137;
+            bool[] res = ds.GetLogicOperations(a, b, c, d);
+            bool[] wait = { true, false, false, false, true, false };
+
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
