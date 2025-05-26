@@ -1,35 +1,33 @@
 ﻿using System;
-using Tyuiu.NovikovD.Sprint2.Task3.V11.Lib;
+using Tyuiu.NovikovD.Sprint3.Task3.V7.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task3.V11
+namespace Tyuiu.NovikovD.Sprint3.Task3.V7
 {
     class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+            string input = "gft hggt ntg";
 
-            Console.WriteLine("************************************************************");
-            Console.WriteLine("* Спринт #2                                                *");
-            Console.WriteLine("* Тема: Условный оператор if-else                          *");
-            Console.WriteLine("* Задание #3                                               *");
-            Console.WriteLine("* Вариант #11                                              *");
-            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-1                       *");
-            Console.WriteLine("************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                 *");
-            Console.WriteLine("* Вычислить значение функции Y при вводе значения X.       *");
-            Console.WriteLine("* Использовать вложенные операторы if-else.                *");
-            Console.WriteLine("* Округлить результат до 3 знаков после запятой.           *");
-            Console.WriteLine("************************************************************");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #3                                                               *");
+            Console.WriteLine("* Тема: Циклы. Foreach                                                    *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-1                                      *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Используя цикл foreach, заменить буквы g на цифру 4 в строке:          *");
+            Console.WriteLine("* gft hggt ntg                                                            *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите значение X: ");
-            double x = Convert.ToDouble(Console.ReadLine());
+            string output = ds.ReplaceGWith4(input);
+            Console.WriteLine(output);
 
-            double y = ds.Calculate(x);
-
-            Console.WriteLine("************************************************************");
-            Console.WriteLine($"Результат: Y = {y}");
-            Console.WriteLine("************************************************************");
+            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }

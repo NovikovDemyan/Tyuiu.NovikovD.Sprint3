@@ -19,66 +19,66 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "task6", "task6", "{C3F0D319
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "task7", "task7", "{2BBC91C8-CC6D-4E0B-9489-E303EB870688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task0.V11", "Tyuiu.NovikovD.Sprint1.Task0.V21\Tyuiu.NovikovD.Sprint2.Task0.V11.csproj", "{D0D4F039-AF52-4199-9AA3-F8CA68D2720F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task0.V24", "Tyuiu.NovikovD.Sprint1.Task0.V21\Tyuiu.NovikovD.Sprint3.Task0.V24.csproj", "{D0D4F039-AF52-4199-9AA3-F8CA68D2720F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task0.V11.Lib", "Tyuiu.NovikovD.Sprint1.Task0.V21.lib\Tyuiu.NovikovD.Sprint2.Task0.V11.Lib.csproj", "{357518EF-4D00-49A5-B0D1-3AC1A07CACF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task0.V24.Lib", "Tyuiu.NovikovD.Sprint1.Task0.V21.lib\Tyuiu.NovikovD.Sprint3.Task0.V24.Lib.csproj", "{357518EF-4D00-49A5-B0D1-3AC1A07CACF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task0.V11.Test", "Tyuiu.NovikovD.Sprint1.Task0.V21.Test\Tyuiu.NovikovD.Sprint2.Task0.V11.Test.csproj", "{054D4F9A-A383-491D-ACEE-723895EDC41B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task0.V24.Test", "Tyuiu.NovikovD.Sprint1.Task0.V21.Test\Tyuiu.NovikovD.Sprint3.Task0.V24.Test.csproj", "{054D4F9A-A383-491D-ACEE-723895EDC41B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task0.V11", "Tyuiu.NovikovD.Sprint1.Task1.V10\Tyuiu.NovikovD.Sprint2.Task0.V11.csproj", "{E383B25F-0C76-4A3F-8B2B-1BCE2A164DEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task1.V7", "Tyuiu.NovikovD.Sprint1.Task1.V10\Tyuiu.NovikovD.Sprint3.Task1.V7.csproj", "{E383B25F-0C76-4A3F-8B2B-1BCE2A164DEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task0.V11.Lib", "Tyuiu.NovikovD.Sprint1.Task1.V10.Lib\Tyuiu.NovikovD.Sprint2.Task0.V11.Lib.csproj", "{74781911-ABBB-4615-8756-6608450BBDBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task1.V7.Lib", "Tyuiu.NovikovD.Sprint1.Task1.V10.Lib\Tyuiu.NovikovD.Sprint3.Task1.V7.Lib.csproj", "{74781911-ABBB-4615-8756-6608450BBDBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task0.V11.Test", "Tyuiu.NovikovD.Sprint1.Task1.V10.Test\Tyuiu.NovikovD.Sprint2.Task0.V11.Test.csproj", "{C5B04970-38D6-4F57-B53C-F57E276395EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task1.V7.Test", "Tyuiu.NovikovD.Sprint1.Task1.V10.Test\Tyuiu.NovikovD.Sprint3.Task1.V7.Test.csproj", "{C5B04970-38D6-4F57-B53C-F57E276395EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task2.V9", "Tyuiu.NovikovD.Sprint1.Task2.V3\Tyuiu.NovikovD.Sprint2.Task2.V9.csproj", "{997E44D7-CACD-42D1-891A-223182B138EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task2.V14", "Tyuiu.NovikovD.Sprint1.Task2.V3\Tyuiu.NovikovD.Sprint3.Task2.V14.csproj", "{997E44D7-CACD-42D1-891A-223182B138EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task2.V9.Lib", "Tyuiu.NovikovD.Sprint1.Task2.V3.Lib\Tyuiu.NovikovD.Sprint2.Task2.V9.Lib.csproj", "{79A65AA4-595A-4152-A6EE-970508F520CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task2.V14.Lib", "Tyuiu.NovikovD.Sprint1.Task2.V3.Lib\Tyuiu.NovikovD.Sprint3.Task2.V14.Lib.csproj", "{79A65AA4-595A-4152-A6EE-970508F520CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task2.V9.Test", "Tyuiu.NovikovD.Sprint1.Task2.V3.Test\Tyuiu.NovikovD.Sprint2.Task2.V9.Test.csproj", "{C71F6DAA-1017-49C3-82DB-D19E07AA2F0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task2.V14.Test", "Tyuiu.NovikovD.Sprint1.Task2.V3.Test\Tyuiu.NovikovD.Sprint3.Task2.V14.Test.csproj", "{C71F6DAA-1017-49C3-82DB-D19E07AA2F0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task3.V11", "Tyuiu.NovikovD.Sprint1.Task3.V7\Tyuiu.NovikovD.Sprint2.Task3.V11.csproj", "{087C0C9C-E7F2-4D42-B8DD-DD2F3EEA50B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task3.V7", "Tyuiu.NovikovD.Sprint1.Task3.V7\Tyuiu.NovikovD.Sprint3.Task3.V7.csproj", "{087C0C9C-E7F2-4D42-B8DD-DD2F3EEA50B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task3.V11.Lib", "Tyuiu.NovikovD.Sprint1.Task3.V7.Lib\Tyuiu.NovikovD.Sprint2.Task3.V11.Lib.csproj", "{A85652C3-2850-422A-902C-807E8F2301BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task3.V7.Lib", "Tyuiu.NovikovD.Sprint1.Task3.V7.Lib\Tyuiu.NovikovD.Sprint3.Task3.V7.Lib.csproj", "{A85652C3-2850-422A-902C-807E8F2301BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task3.V11.Test", "Tyuiu.NovikovD.Sprint1.Task3.V7.Test\Tyuiu.NovikovD.Sprint2.Task3.V11.Test.csproj", "{3E897747-DD0A-4B2B-8075-79F280F919F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task3.V7.Test", "Tyuiu.NovikovD.Sprint1.Task3.V7.Test\Tyuiu.NovikovD.Sprint3.Task3.V7.Test.csproj", "{3E897747-DD0A-4B2B-8075-79F280F919F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task4.V14", "Tyuiu.NovikovD.Sprint1.Task4.V24\Tyuiu.NovikovD.Sprint2.Task4.V14.csproj", "{11E14A20-FB21-42D5-AB39-B35953D1BF2F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task4.V8", "Tyuiu.NovikovD.Sprint1.Task4.V24\Tyuiu.NovikovD.Sprint3.Task4.V8.csproj", "{11E14A20-FB21-42D5-AB39-B35953D1BF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task4.V14.Lib", "Tyuiu.NovikovD.Sprint1.Task4.V24.Lib\Tyuiu.NovikovD.Sprint2.Task4.V14.Lib.csproj", "{6B549429-09C5-4C8F-AE80-0E22677133FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task4.V8.Lib", "Tyuiu.NovikovD.Sprint1.Task4.V24.Lib\Tyuiu.NovikovD.Sprint3.Task4.V8.Lib.csproj", "{6B549429-09C5-4C8F-AE80-0E22677133FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task4.V14.Test", "Tyuiu.NovikovD.Sprint1.Task4.V24.Test\Tyuiu.NovikovD.Sprint2.Task4.V14.Test.csproj", "{F150DCF1-4557-494F-9968-883BDDF7B3A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task4.V8.Test", "Tyuiu.NovikovD.Sprint1.Task4.V24.Test\Tyuiu.NovikovD.Sprint3.Task4.V8.Test.csproj", "{F150DCF1-4557-494F-9968-883BDDF7B3A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task5.V5", "Tyuiu.NovikovD.Sprint1.Task5.V4\Tyuiu.NovikovD.Sprint2.Task5.V5.csproj", "{6E8F180E-B0BC-46BC-B0D9-9620249E6DD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task5.V29", "Tyuiu.NovikovD.Sprint1.Task5.V4\Tyuiu.NovikovD.Sprint3.Task5.V29.csproj", "{6E8F180E-B0BC-46BC-B0D9-9620249E6DD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task5.V5.Lib", "Tyuiu.NovikovD.Sprint1.Task5.V4.Lib\Tyuiu.NovikovD.Sprint2.Task5.V5.Lib.csproj", "{3B942C3F-9711-4A7F-8235-1881D672C9BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task5.V29.Lib", "Tyuiu.NovikovD.Sprint1.Task5.V4.Lib\Tyuiu.NovikovD.Sprint3.Task5.V29.Lib.csproj", "{3B942C3F-9711-4A7F-8235-1881D672C9BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task5.V5.Test", "Tyuiu.NovikovD.Sprint1.Task5.V4.Test\Tyuiu.NovikovD.Sprint2.Task5.V5.Test.csproj", "{DB990D26-4D07-4935-93DB-1ED81844F0FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task5.V29.Test", "Tyuiu.NovikovD.Sprint1.Task5.V4.Test\Tyuiu.NovikovD.Sprint3.Task5.V29.Test.csproj", "{DB990D26-4D07-4935-93DB-1ED81844F0FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task6.V3", "Tyuiu.NovikovD.Sprint1.Task6.V9\Tyuiu.NovikovD.Sprint2.Task6.V3.csproj", "{5968E07F-1A27-4578-AD92-BA806C799C54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task6.V24", "Tyuiu.NovikovD.Sprint1.Task6.V9\Tyuiu.NovikovD.Sprint3.Task6.V24.csproj", "{5968E07F-1A27-4578-AD92-BA806C799C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task6.V3.Lib", "Tyuiu.NovikovD.Sprint1.Task6.V9.Lib\Tyuiu.NovikovD.Sprint2.Task6.V3.Lib.csproj", "{E4CF0D13-6E44-43A8-B8B1-6A29B2EE3952}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task6.V24.Lib", "Tyuiu.NovikovD.Sprint1.Task6.V9.Lib\Tyuiu.NovikovD.Sprint3.Task6.V24.Lib.csproj", "{E4CF0D13-6E44-43A8-B8B1-6A29B2EE3952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task6.V3.Test", "Tyuiu.NovikovD.Sprint1.Task6.V9.Test\Tyuiu.NovikovD.Sprint2.Task6.V3.Test.csproj", "{56161460-77D0-458A-8CB6-54F7847ED2BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task6.V24.Test", "Tyuiu.NovikovD.Sprint1.Task6.V9.Test\Tyuiu.NovikovD.Sprint3.Task6.V24.Test.csproj", "{56161460-77D0-458A-8CB6-54F7847ED2BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task7.V8", "Tyuiu.NovikovD.Sprint1.Task7.V29\Tyuiu.NovikovD.Sprint2.Task7.V8.csproj", "{599054A0-9289-4386-B61E-4548FA361B22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task7.V15", "Tyuiu.NovikovD.Sprint1.Task7.V29\Tyuiu.NovikovD.Sprint3.Task7.V15.csproj", "{599054A0-9289-4386-B61E-4548FA361B22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task7.V8.Lib", "Tyuiu.NovikovD.Sprint1.Task7.V29.Lib\Tyuiu.NovikovD.Sprint2.Task7.V8.Lib.csproj", "{07B1C22E-CD51-4F78-A44E-90E137C7F78F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task7.V15.Lib", "Tyuiu.NovikovD.Sprint1.Task7.V29.Lib\Tyuiu.NovikovD.Sprint3.Task7.V15.Lib.csproj", "{07B1C22E-CD51-4F78-A44E-90E137C7F78F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.Task7.V8.Test", "Tyuiu.NovikovD.Sprint1.Task7.V29.Test\Tyuiu.NovikovD.Sprint2.Task7.V8.Test.csproj", "{BDF8BC4F-6DBF-492F-B04A-B200AE075007}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.Task7.V15.Test", "Tyuiu.NovikovD.Sprint1.Task7.V29.Test\Tyuiu.NovikovD.Sprint3.Task7.V15.Test.csproj", "{BDF8BC4F-6DBF-492F-B04A-B200AE075007}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLL", "DLL", "{629EC914-B958-442C-AF69-124EA7DDB570}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Downloads\tyuiu.cources.programming.interfaces (1).dll = ..\..\..\Downloads\tyuiu.cources.programming.interfaces (1).dll
+		..\..\..\Downloads\tyuiu.cources.programming.interfaces (2).dll = ..\..\..\Downloads\tyuiu.cources.programming.interfaces (2).dll
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SprintReview", "SprintReview", "{1C42A14A-AB94-4D9E-83D2-E54AB38D03F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.SprintReview.V3", "Tyuiu.NovikovD.SprintReview.TaskReview.V20\Tyuiu.NovikovD.Sprint2.SprintReview.V3.csproj", "{1BB572E3-FFF2-4F34-8AE2-C05946D04800}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.SprintReview.V13", "Tyuiu.NovikovD.SprintReview.TaskReview.V20\Tyuiu.NovikovD.Sprint3.SprintReview.V13.csproj", "{1BB572E3-FFF2-4F34-8AE2-C05946D04800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.SprintReview.V3.Lib", "Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib\Tyuiu.NovikovD.Sprint2.SprintReview.V3.Lib.csproj", "{E757BACB-BE51-4C06-9478-513C073E575E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.SprintReview.V13.Lib", "Tyuiu.NovikovD.SprintReview.TaskReview.V20.Lib\Tyuiu.NovikovD.Sprint3.SprintReview.V13.Lib.csproj", "{E757BACB-BE51-4C06-9478-513C073E575E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint2.SprintReview.V3.Test", "Tyuiu.NovikovD.SprintReview.TaskReview.V20.Test\Tyuiu.NovikovD.Sprint2.SprintReview.V3.Test.csproj", "{28DE4131-D6AE-4B4C-83B7-3B05F1EB19FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovD.Sprint3.SprintReview.V13.Test", "Tyuiu.NovikovD.SprintReview.TaskReview.V20.Test\Tyuiu.NovikovD.Sprint3.SprintReview.V13.Test.csproj", "{28DE4131-D6AE-4B4C-83B7-3B05F1EB19FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

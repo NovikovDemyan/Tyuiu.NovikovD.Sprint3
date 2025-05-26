@@ -1,46 +1,28 @@
 ﻿using System;
-using Tyuiu.NovikovD.Sprint2.Task0.V11.Lib;
+using Tyuiu.NovikovD.Sprint3.Task0.V24.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task0.V11
+namespace Tyuiu.NovikovD.Sprint3.Task0.V24
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* Спринт #3                                                 *");
+            Console.WriteLine("* Task 0. Вариант 24                                        *");
+            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-1                        *");
+            Console.WriteLine("************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                  *");
+            Console.WriteLine("* Вычислить произведение ряда по формуле, при x = 5         *");
+            Console.WriteLine("************************************************************");
+
             DataService ds = new DataService();
+            int x = 5;
+            double result = ds.CalculateProductSeries(x);
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Операции сравнения                                                *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #11                                                             *");
-            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу из операций сравнений, которая вернет                *");
-            Console.WriteLine("* логическую последовательность (True, False, True, False, True, False)   *");
-            Console.WriteLine("* при x = 8105, y = 275                                                   *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine($"Результат вычисления произведения: {result}");
+            Console.WriteLine("************************************************************");
 
-            int x = 8105;
-            int y = 275;
-            Console.WriteLine($"X = {x}");
-            Console.WriteLine($"Y = {y}");
-
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
-
-            bool[] results = ds.GetCompareOperations(x, y);
-            Console.WriteLine("Полученная последовательность:");
-            for (int i = 0; i < results.Length; i++)
-            {
-                Console.WriteLine($"Операция {i + 1}: {results[i]}");
-            }
-
-            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }

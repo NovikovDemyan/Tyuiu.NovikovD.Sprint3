@@ -1,12 +1,29 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using System;
+using System.Collections.Generic;
 
-namespace Tyuiu.NovikovD.Sprint2.Task7.V8.Lib
+namespace Tyuiu.NovikovD.Sprint3.Task7.V15.Lib
 {
-    public class DataService : ISprint2Task7V8
+    public class DataService
     {
-        public bool CheckDotInShadedArea(double x, double y)
+        public Dictionary<double, double> TabulateFunction(double start, double end, double step)
         {
-            return (x >= 0) && (y >= x * x) && (y <= 4);
+            Dictionary<double, double> functionValues = new Dictionary<double, double>();
+
+            for (double x = start; x <= end; x += step)
+            {
+                try
+                {
+                    double y = Math.Sin(x) + (2 * x) / 3 - Math.Cos(x) * 4 * x;
+                    y = Math.Round(y, 2); // Округление до двух знаков после запятой
+                    functionValues[x] = y;
+                }
+                catch (DivideByZeroException)
+                {
+                    functionValues[x] = 0; // При делении на ноль вернуть значение 0
+                }
+            }
+
+            return functionValues;
         }
     }
 }

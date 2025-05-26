@@ -1,21 +1,27 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.NovikovD.Sprint2.Task2.V9.Lib;
+using System;
+using Tyuiu.NovikovD.Sprint3.Task2.V14.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task2.V9.Test
+namespace Tyuiu.NovikovD.Sprint3.Task2.V14.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidIsPointInShadedArea()
+        public void TestCalculateProduct()
         {
             DataService ds = new DataService();
-            int x = 5;
-            int y = 5;
-            bool res = ds.CheckDotInShadedArea(x, y);
-            bool wait = true;
+            double x = 5;
 
-            Assert.AreEqual(wait, res);
+            double expected = 1;
+            for (int k = 1; k <= 6; k++)
+            {
+                expected *= Math.Pow((x / k), 3);
+            }
+
+            double result = ds.CalculateProduct(x);
+
+            Assert.AreEqual(expected, result, 0.0001);
         }
     }
 }

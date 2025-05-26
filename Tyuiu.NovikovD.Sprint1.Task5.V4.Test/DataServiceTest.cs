@@ -1,33 +1,21 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.NovikovD.Sprint2.Task5.V5.Lib;
+using System;
+using Tyuiu.NovikovD.Sprint3.Task5.V29.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task5.V5.Test
+namespace Tyuiu.NovikovD.Sprint3.Task5.V29.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestCardNameKing()
+        public void ValidCalculateFunction()
         {
             DataService ds = new DataService();
-            string result = ds.FindCardValue(13);
-            Assert.AreEqual("Король", result);
-        }
+            double x = 2;
+            double res = ds.CalculateFunction(x);
+            double expected = 2 * (1 + 1 / 2.0 + 1 / 3.0 + 1 / 4.0 + 1 / 5.0 + 1 / 6.0 + 1 / 7.0 + 1 / 8.0 + 1 / 9.0 + 1 / 10.0) * 3 + Math.Sin(2);
 
-        [TestMethod]
-        public void TestCardNameSix()
-        {
-            DataService ds = new DataService();
-            string result = ds.FindCardValue(6);
-            Assert.AreEqual("Шестерка", result);
-        }
-
-        [TestMethod]
-        public void TestInvalidCard()
-        {
-            DataService ds = new DataService();
-            string result = ds.FindCardValue(15);
-            Assert.AreEqual("Некорректный номер карты", result);
+            Assert.AreEqual(expected, res, 0.001);
         }
     }
 }

@@ -1,22 +1,18 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using System;
 
-namespace Tyuiu.NovikovD.Sprint2.Task0.V11.Lib
+namespace Tyuiu.NovikovD.Sprint3.Task0.V24.Lib
 {
-    public class DataService : ISprint2Task0V11
+    public class DataService
     {
-        public bool[] GetCompareOperations(int x, int y)
+        public double CalculateProductSeries(int x)
         {
-            bool[] results = new bool[6];
-
-            // Последовательность операций сравнения
-            results[0] = x == y + 7830;  // True (8105 == 275 + 7830)
-            results[1] = x != y + 7830;   // False
-            results[2] = x > y;           // True
-            results[3] = x < y;           // False
-            results[4] = x >= y * 29;     // True (8105 >= 7975)
-            results[5] = x <= y / 2;      // False
-
-            return results;
+            double result = 1.0;
+            for (int i = 1; i <= 7; i++)
+            {
+                double term = Math.Pow(3.0 / (i + x - (i * i)), 2);
+                result *= term;
+            }
+            return Math.Round(result, 3);
         }
     }
 }

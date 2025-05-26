@@ -1,21 +1,18 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tyuiu.NovikovD.Sprint2.Task0.V11.Lib;
+using Tyuiu.NovikovD.Sprint3.Task0.V24.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task0.V11.Test
+namespace Tyuiu.NovikovD.Sprint3.Task0.V24.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetCompareOperations()
+        public void TestCalculateProductSeries()
         {
             DataService ds = new DataService();
-            int x = 8105;
-            int y = 275;
-            bool[] res = ds.GetCompareOperations(x, y);
-            bool[] wait = { true, false, true, false, true, false };
-
-            CollectionAssert.AreEqual(wait, res);
+            double actual = ds.CalculateProductSeries(5);
+            double expected = 0.000; // Замените на точное значение, если нужно
+            Assert.AreEqual(expected, actual, 0.001);
         }
     }
 }

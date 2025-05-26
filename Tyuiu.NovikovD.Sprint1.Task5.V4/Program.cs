@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.NovikovD.Sprint2.Task5.V5.Lib;
+using Tyuiu.NovikovD.Sprint3.Task5.V29.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task5.V5
+namespace Tyuiu.NovikovD.Sprint3.Task5.V29
 {
     class Program
     {
@@ -9,27 +9,31 @@ namespace Tyuiu.NovikovD.Sprint2.Task5.V5
         {
             DataService ds = new DataService();
 
-            Console.WriteLine("************************************************************");
-            Console.WriteLine("* Спринт #2                                                 *");
-            Console.WriteLine("* Тема: Оператор switch                                     *");
-            Console.WriteLine("* Задание #5                                               *");
-            Console.WriteLine("* Вариант #5                                               *");
-            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-2                       *");
-            Console.WriteLine("************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                  *");
-            Console.WriteLine("* По заданному номеру карты (6 <= k <= 14) определить её   *");
-            Console.WriteLine("* достоинство.                                             *");
-            Console.WriteLine("************************************************************");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #3                                                               *");
+            Console.WriteLine("* Тема: Оператор цикла for                                               *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #29                                                             *");
+            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Написать программу, которая вычисляет значение функции y при X=2        *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите номер карты (от 6 до 14): ");
-            int k = Convert.ToInt32(Console.ReadLine());
+            double x = 2;
+            Console.WriteLine($"X = {x}");
 
-            string result = ds.FindCardValue(k);
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("************************************************************");
-            Console.WriteLine($"Достоинство карты: {result}");
-            Console.WriteLine("************************************************************");
+            double result = ds.CalculateFunction(x);
+            Console.WriteLine($"Значение функции y при X=2: {result}");
 
+            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }

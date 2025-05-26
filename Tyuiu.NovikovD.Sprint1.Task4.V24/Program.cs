@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.NovikovD.Sprint2.Task4.V14.Lib;
+using Tyuiu.NovikovD.Sprint3.Task4.V8.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task4.V14
+namespace Tyuiu.NovikovD.Sprint3.Task4.V8
 {
     class Program
     {
@@ -9,29 +9,32 @@ namespace Tyuiu.NovikovD.Sprint2.Task4.V14
         {
             DataService ds = new DataService();
 
-            Console.WriteLine("************************************************************");
-            Console.WriteLine("* Спринт #2                                                 *");
-            Console.WriteLine("* Тема: Тернарный оператор                                 *");
-            Console.WriteLine("* Задание #4                                               *");
-            Console.WriteLine("* Вариант #14                                              *");
-            Console.WriteLine("* Выполнил: Новиков Д. | АСОиУБ-23-1                       *");
-            Console.WriteLine("************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                 *");
-            Console.WriteLine("* Вычислить значение Z по формуле с тернарным оператором. *");
-            Console.WriteLine("************************************************************");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* Спринт #3                                                               *");
+            Console.WriteLine("* Тема: Цикл while                                                        *");
+            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Вариант #8                                                              *");
+            Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* На отрезке [-5;5] вычислить значение функции y=(x/sin(x))+0.5          *");
+            Console.WriteLine("* При x=0 прервать цикл. Полученные значения перемножить.                 *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.WriteLine("***************************************************************************");
 
-            Console.Write("Введите значение X: ");
-            double x = Convert.ToDouble(Console.ReadLine());
+            int start = -5;
+            int stop = 5;
+            Console.WriteLine($"Начальное значение x = {start}");
+            Console.WriteLine($"Конечное значение x = {stop}");
 
-            Console.Write("Введите значение Y: ");
-            double y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+            Console.WriteLine("***************************************************************************");
 
-            double result = ds.Calculate(x, y);
-
-            Console.WriteLine("************************************************************");
-            Console.WriteLine($"Результат: Z = {result}");
-            Console.WriteLine("************************************************************");
-
+            double res = ds.Calculate(start, stop);
+            Console.WriteLine($"Произведение значений функции = {res}");
+            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }

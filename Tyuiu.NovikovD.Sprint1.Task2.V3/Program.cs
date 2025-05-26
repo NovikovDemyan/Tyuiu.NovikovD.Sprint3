@@ -1,41 +1,36 @@
 ﻿using System;
-using Tyuiu.NovikovD.Sprint2.Task2.V9.Lib;
+using Tyuiu.NovikovD.Sprint3.Task2.V14.Lib;
 
-namespace Tyuiu.NovikovD.Sprint2.Task2.V9
+namespace Tyuiu.NovikovD.Sprint3.Task2.V14
 {
     class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+            double x = 5;
 
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Оператор if – полная и короткая форма записи                     *");
+            Console.WriteLine("* Спринт #3                                                               *");
+            Console.WriteLine("* Тема: Циклы. Оператор do...while                                        *");
             Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #9                                                              *");
+            Console.WriteLine("* Вариант #14                                                             *");
             Console.WriteLine("* Выполнил: Новиков Д.   | АСОиУБ-23-1                                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с клавиатуры*");
-            Console.WriteLine("* и вычисляет, находится ли точка с координатами X,Y в заштрихованной    *");
-            Console.WriteLine("* области.                                                                *");
+            Console.WriteLine("* Написать программу, которая вычисляет произведение ряда:               *");
+            Console.WriteLine("* p = Π ((x / k)^3), где k = 1..6, при x = 5                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
-            Console.Write("Введите координату X: ");
-            int x = int.Parse(Console.ReadLine());
-
-            Console.Write("Введите координату Y: ");
-            int y = int.Parse(Console.ReadLine());
+            Console.WriteLine($"x = {x}");
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            bool result = ds.CheckDotInShadedArea(x, y);
-            Console.WriteLine($"Точка с координатами ({x}, {y}) находится в заштрихованной области: {result}");
+            double result = ds.CalculateProduct(x);
+            Console.WriteLine($"Результат произведения ряда: {result:F6}");
 
             Console.WriteLine("***************************************************************************");
             Console.ReadKey();

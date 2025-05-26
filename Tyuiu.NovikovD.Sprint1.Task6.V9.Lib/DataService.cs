@@ -1,19 +1,28 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
+﻿using System;
+using System.Collections.Generic;
 
-namespace Tyuiu.NovikovD.Sprint2.Task6.V3.Lib
+namespace Tyuiu.NovikovD.Sprint3.Task6.V24.Lib
 {
-    public class DataService : ISprint2Task6V3
+    public class DataService
     {
-        public string FindDayName(int dayNumber)
+        public Dictionary<int, int> CountDivisorsInRange(int start, int end)
         {
-            if (dayNumber == 1) return "Понедельник";
-            else if (dayNumber == 2) return "Вторник";
-            else if (dayNumber == 3) return "Среда";
-            else if (dayNumber == 4) return "Четверг";
-            else if (dayNumber == 5) return "Пятница";
-            else if (dayNumber == 6) return "Суббота";
-            else if (dayNumber == 7) return "Воскресенье";
-            else return "Ошибка: некорректный номер дня";
+            Dictionary<int, int> divisorsCount = new Dictionary<int, int>();
+
+            for (int number = start; number <= end; number++)
+            {
+                int count = 0;
+                for (int i = 1; i <= number; i++)
+                {
+                    if (number % i == 0)
+                    {
+                        count++;
+                    }
+                }
+                divisorsCount[number] = count;
+            }
+
+            return divisorsCount;
         }
     }
 }
